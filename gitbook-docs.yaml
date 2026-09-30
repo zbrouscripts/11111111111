@@ -1,27 +1,77 @@
-# ZBrou docs language map
-# Use each folder as a GitBook Space/Variant when configuring Git Sync.
-languages:
-  - code: es
-    name: Español
-    root: ./es
-  - code: en
-    name: English
-    root: ./en
-  - code: pt
-    name: Português
-    root: ./pt
-  - code: fr
-    name: Français
-    root: ./fr
-  - code: de
-    name: Deutsch
-    root: ./de
-  - code: tr
-    name: Türkçe
-    root: ./tr
-  - code: it
-    name: Italiano
-    root: ./it
-  - code: pl
-    name: Polski
-    root: ./pl
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+
+site:
+  title: ZBrou Scripts
+
+  structure:
+    - type: section
+      key: frasekill
+      title: ZBrou FraseKill
+      path: frasekill
+      default: true
+
+      children:
+        - type: space
+          key: frasekill-es
+          title: 🇪🇸 Español
+          path: es
+          default: true
+          content:
+            directory: ./es
+            language: es
+
+        - type: space
+          key: frasekill-en
+          title: 🇬🇧 English
+          path: en
+          content:
+            directory: ./en
+            language: en
+
+        - type: space
+          key: frasekill-pt
+          title: 🇵🇹 Português
+          path: pt
+          content:
+            directory: ./pt
+            language: pt
+
+        - type: space
+          key: frasekill-fr
+          title: 🇫🇷 Français
+          path: fr
+          content:
+            directory: ./fr
+            language: fr
+
+        - type: space
+          key: frasekill-de
+          title: 🇩🇪 Deutsch
+          path: de
+          content:
+            directory: ./de
+            language: de
+
+        - type: space
+          key: frasekill-tr
+          title: 🇹🇷 Türkçe
+          path: tr
+          content:
+            directory: ./tr
+            language: tr
+
+        - type: space
+          key: frasekill-it
+          title: 🇮🇹 Italiano
+          path: it
+          content:
+            directory: ./it
+            language: it
+
+        - type: space
+          key: frasekill-pl
+          title: 🇵🇱 Polski
+          path: pl
+          content:
+            directory: ./pl
+            language: pl
